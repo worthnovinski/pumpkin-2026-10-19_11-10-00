@@ -518,6 +518,10 @@ PrefabInstance:
       propertyPath: mouseLookScript
       value: 
       objectReference: {fileID: 1587022277}
+    - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
+      propertyPath: transitionLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 4811717669698316274, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
       propertyPath: m_Name
       value: Player
