@@ -507,6 +507,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1227071561}
     - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
+      propertyPath: burnrate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
       propertyPath: batterybar
       value: 
       objectReference: {fileID: 1765628243}
