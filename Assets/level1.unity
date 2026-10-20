@@ -630,6 +630,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 901900923}
     - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
+      propertyPath: panox
+      value: 
+      objectReference: {fileID: 1442474912}
+    - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
       propertyPath: twall
       value: 
       objectReference: {fileID: 441764853}
@@ -6546,8 +6550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6570,7 +6574,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442474912}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!108 &1587022274 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 5906253620211559783, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
@@ -6773,7 +6777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1776981136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1763426193}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: gamstrt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1776981136
 MonoBehaviour:
   m_ObjectHideFlags: 0

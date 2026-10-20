@@ -69,8 +69,34 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        if(SceneManager.GetActiveScene().name != "SampleScene"){
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            if (mouseLookScript != null) mouseLookScript.enabled = false;
+
+            panox.SetActive(true);
+            Time.timeScale = 0f;
+            hasflashlight=false;
+            batterybar.SetActive(false);
+
+        }
 
     }
+
+    public void gamstrt(){
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        Time.timeScale = 1f;
+        panox.SetActive(false);
+        hasflashlight = true;
+        batterybar.SetActive(true);
+        if (mouseLookScript != null) mouseLookScript.enabled = true;
+    }
+
+
+
+
     void Update()
     {
         if(hasflashlight && flashlightbattery > 0){
