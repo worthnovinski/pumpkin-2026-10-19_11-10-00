@@ -110159,6 +110159,10 @@ PrefabInstance:
       value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
+      propertyPath: moveSpeed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 524847942197599835, guid: 0b42f3f00ffa04a58929f77de70d0758, type: 3}
       propertyPath: batterybar
       value: 
       objectReference: {fileID: 731468035}
@@ -110387,6 +110391,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1583358510179747601, guid: d4c1922183f184f00954375b0fbe1b84, type: 3}
+      propertyPath: m_Speed
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 3517423613374056688, guid: d4c1922183f184f00954375b0fbe1b84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.07
