@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public Transform spawnpoint;
     [SerializeField] public GameObject pano;
     [SerializeField] public GameObject panow;
+    [SerializeField] public GameObject panox;
+
     
 
 
@@ -67,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
     }
     void Update()
     {
@@ -98,6 +101,8 @@ public class PlayerMovement : MonoBehaviour
             if(flashlightbattery <= 1){
                 Debug.Log("battery dead");
                 lit.intensity = 0;
+                jacktivation();
+
 
             }
 
@@ -260,11 +265,17 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void jacktivation(){
-        pj.SetActive(true);
+
+        if(SceneManager.GetActiveScene().name != "SampleScene"){
+         pj.SetActive(true);
         twall.SetActive(true);
         twall1.SetActive(true);
         twall2.SetActive(true);
         twall3.SetActive(true);
+
+
+        }
+
 
     }
 
